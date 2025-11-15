@@ -17,3 +17,6 @@ mkdir -p build/clay                                                       \
 main.c                                                                    \
 && cp index.html build/index.html && cp -r fonts/ build/clay/fonts   \
 && cp -r images/ build/clay/images
+
+cd build
+python -m http.server 9050
